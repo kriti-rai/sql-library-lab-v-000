@@ -1,7 +1,6 @@
-CREATE TABLE series (id PRIMARY KEY INTEGER, title TEXT, author_id INTEGER, subgenre_id INTEGER);
--- CREATE TABLE subgenre (id PRIMARY KEY INTEGER, name TEXT);
--- CREATE TABLE authors(id PRIMARY KEY INTEGER, name TEXT);
--- CREATE TABLE books (id PRIMARY KEY INTEGER, title TEXT, series_id INTEGER);
--- CREATE TABLE characters (id PRIMARY KEY INTEGER, name TEXT, motto TEXT,
--- species TEXT, author_id INTEGER, series_id INTEGER);
--- CREATE TABLE character_books (id PRIMARY KEY INTEGER, character_id INTEGER, book_id INTEGER);
+CREATE TABLE series (id INTEGER PRIMARY KEY, title TEXT, author_id INTEGER, subgenre_id INTEGER);
+CREATE TABLE subgenre (id INTEGER PRIMARY KEY, name TEXT);
+CREATE TABLE authors(id INTEGER PRIMARY KEY, name TEXT);
+CREATE TABLE books (id INTEGER PRIMARY KEY, title TEXT, series_id);
+CREATE TABLE characters (id INTEGER PRIMARY KEY, name TEXT, motto TEXT, species TEXT, author_id, series_id);
+CREATE TABLE character_books (id INTEGER PRIMARY KEY, character_id INTEGER, book_id INTEGER);
