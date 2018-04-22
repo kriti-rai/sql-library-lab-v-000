@@ -1,3 +1,3 @@
 UPDATE characters
 SET name = 'Martian'
-WHERE id = 8;
+WHERE id = MAX(id);
