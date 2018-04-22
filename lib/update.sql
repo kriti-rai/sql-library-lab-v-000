@@ -1,3 +1,3 @@
 UPDATE species
-SET species.name = 'Martian'
-WHERE species.name = 'cylon';
+SET name = 'Martian'
+WHERE name = 'cylon';
