@@ -1,3 +1,3 @@
 UPDATE characters
 SET name = 'Martian'
-WHERE name = 'cylon';
+WHERE id = 8;
